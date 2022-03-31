@@ -15,3 +15,15 @@ function btnEntrarAlert() {
 btnEntrar.addEventListener('click', btnEntrarAlert);
 
 // btn enviar só funciona se o checkbox dos termos estiverem marcados
+
+const checkbox = document.getElementById('agreement');
+const submitBtn = document.getElementById('submit-btn');
+
+function btnEnviarCheck() {
+  if (checkbox) {
+    submitBtn.removeAttribute('disabled');
+  } else {
+    submitBtn.setAttribute('disabled', true);
+  }
+}
+checkbox.addEventListener('click', btnEnviarCheck);
