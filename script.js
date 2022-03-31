@@ -1,6 +1,6 @@
 const btnEntrar = document.getElementById('btn-entrar');
 
-// Alert btn entrar
+// Samuel!
 
 function btnEntrarAlert() {
   const email = document.getElementById('email');
