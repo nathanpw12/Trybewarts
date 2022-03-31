@@ -1,5 +1,7 @@
 const btnEntrar = document.getElementById('btn-entrar');
 
+// Alert btn entrar
+
 function btnEntrarAlert() {
   const email = document.getElementById('email');
   const senha = document.getElementById('senha');
@@ -11,3 +13,5 @@ function btnEntrarAlert() {
 }
 
 btnEntrar.addEventListener('click', btnEntrarAlert);
+
+// btn enviar só funciona se o checkbox dos termos estiverem marcados

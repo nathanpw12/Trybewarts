@@ -23,7 +23,7 @@
   color: white;
 }
 
-#btn-entrar {
+#btn-entrar , #submit-btn {
   background-color: rgb(78, 44, 131);
   color: white;
   border: none;
@@ -44,5 +44,22 @@
 }
 
 hr {
-  width: 300px;
+  width: 100%;
+}
+
+.rate {
+  display: flex;
+}
+
+.rate label {
+  margin-right: 10px;
+}
+
+.rate span {
+  margin-right: 15px;
+}
+
+.coment {
+  display: flex;
+  flex-direction: column;
 }
