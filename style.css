@@ -13,4 +13,27 @@
 
 .trybewarts-login input {
   margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#trybewarts-header-title {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+#btn-entrar {
+  background-color: rgb(78, 44, 131);
+  color: white;
+  border: none;
+}
+
+.main-content {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  display: flex;
 }
