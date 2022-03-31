@@ -20,10 +20,11 @@ const checkbox = document.getElementById('agreement');
 const submitBtn = document.getElementById('submit-btn');
 
 function btnEnviarCheck() {
-  if (checkbox) {
-    submitBtn.removeAttribute('disabled');
+  console.log(checkbox.value);
+  if (submitBtn.disabled) {
+    submitBtn.disabled = false;
   } else {
-    submitBtn.setAttribute('disabled', true);
+    submitBtn.disabled = true;
   }
 }
 checkbox.addEventListener('click', btnEnviarCheck);
