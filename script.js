@@ -20,7 +20,6 @@ const checkbox = document.getElementById('agreement');
 const submitBtn = document.getElementById('submit-btn');
 
 function btnEnviarCheck() {
-  console.log(checkbox.value);
   if (submitBtn.disabled) {
     submitBtn.disabled = false;
   } else {
@@ -28,3 +27,27 @@ function btnEnviarCheck() {
   }
 }
 checkbox.addEventListener('click', btnEnviarCheck);
+
+// Contador de caracteres restantes text area
+const counter = document.getElementById('counter');
+const textArea = document.getElementById('textarea');
+
+function counterFunction() {
+  const valueLenght = 500 - textArea.value.length;
+  counter.innerText = valueLenght + ' caracteres restantes';
+}
+counterFunction();
+
+textArea.addEventListener('keyup', counterFunction);
+
+//
+
+const forms = document.getElementById('evaluation-form');
+
+submitBtn.addEventListener('click', formValue); 
+
+function formValue() {
+  const spanNome = document.createElement('span');
+  spanNome.innerText = document.getElementById('input-name').value;
+  forms.appendChild(spanNome); 
+}
